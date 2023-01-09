@@ -1,17 +1,8 @@
 .App {
   text-align: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
@@ -19,20 +10,69 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.inputContainer {
+  display: inline-flex;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.emojiPickerContainer {
+  position: absolute;
+  width: 400px;
+  height: 350px;
+  border: solid 1px white;
+  background-color: #222;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  box-sizing: border-box;
+  top: 35px;
+  border-radius: 5px;
 }
+
+.emojiPickerButton {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.emojisList {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.emojiButton {
+  border: none;
+  font-size: 28px;
+  background-color: transparent;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+}
+
+.emojiButton:hover {
+  background-color: white;
+}
+
+.search {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.inputt {
+  width: 300px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+
